@@ -1,9 +1,9 @@
 Meteor.startup(function() {
   if(Meteor.isClient) {
     SEO.config({
-      title: 'Meteor Vegas',
+      title: 'Meteor Singapore',
       meta: {
-        'description': 'A Bi-Monthly Meteor.js Meetup in Las Vegas, NV'
+        'description': 'A Bi-Monthly Meteor.js Meetup in Singapore'
       },
       og: {
         'image': Meteor.absoluteUrl('share-image.png')
