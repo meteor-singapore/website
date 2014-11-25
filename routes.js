@@ -12,6 +12,15 @@ Router.map(function() {
     }
   });
 
+  this.route('blog', {
+    path: '/blog',
+    onAfterAction: function() {
+      SEO.set({
+        title: 'Blog | ' + SEO.settings.title
+      });
+    }
+  });
+
   this.route('meetups', {
     path: '/meetups',
     waitOn: function() {
